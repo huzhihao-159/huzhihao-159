@@ -1,0 +1,217 @@
+.jd_layout {
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    height: 2000px;
+    background-color: #ccc;
+}
+.jd_search {
+    width: 100%;
+    height: 40px;
+    max-width: 640px;
+    min-width: 320px;
+    position: fixed;
+    z-index: 9999;
+    background: rgba(234, 35, 34,0);
+}
+.jd_logo,
+.jd_login {
+    height: 100%;
+}
+.jd_logo {
+    float: left;
+    background:url("../images/jd-sprites.png") 0 -108px ;
+    background-size: 200px 200px;
+    width: 56px;
+    height: 30px;
+    margin:5px 0 0 10px ;
+}
+.jd_login {
+    float: right;
+    width: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+.jd_searchBox {
+    position: relative;
+    height:100%;
+    overflow: hidden;
+    padding:0 12px; 
+}
+.jd_searchBox>input {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding-left: 30px;
+}
+.jd_searchBox::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left:15px;
+    width: 23px;
+    height: 20px;
+    background:url("../images/jd-sprites.png") -56px -108px ;
+    background-size: 200px 200px;
+}
+.jd_banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.jd_banner>.jd_bannerImg {
+    width: 800%;
+    /* transform: translateX(-10%); */
+    /* 或者 */
+     position: relative;
+
+}
+.jd_banner>.jd_bannerImg li {
+    width: 12.5%;
+    float: left;
+}
+.jd_banner>.jd_bannerImg img {
+    display: block;
+    width: 100%;
+}
+.jd_banner>.jd_bannerArrow {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 128px;
+    height: 8px;
+}
+.jd_banner>.jd_bannerArrow li {
+    float: left;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    margin-left: 10px;
+}
+.jd_banner>.jd_bannerArrow li:first-of-type {
+    margin-left: 0;
+}
+.jd_banner>.jd_bannerArrow>li.active {
+    background-color: #fff;
+}
+.jd_nav {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 10px;
+}
+.jd_nav li {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.jd_nav li img {
+    width: 45px;
+    margin-bottom: 5px;
+}
+.jd_nav li p {
+    margin-bottom: 10px;
+}
+.jd_goods {
+    width: 100%;
+    background-color: #fff;
+}
+.jd_goods>.jd_goodshd {
+    width: 100%;
+    height: 35px;
+    padding-left: 50px;
+    line-height: 35px;
+    border-bottom: 1px solid #ccc;
+}
+.jd_goods>.jd_goodshd h3 {
+    position: relative;
+    color: #666;
+    margin: 10px 0;
+}
+.jd_goods>.jd_goodshd h3::before {
+    content: "";
+    width: 3px;
+    height: 15px;
+    background-color: #e92322;
+    position: absolute;
+    left: -6px;
+    top:9px;
+}
+.jd_goods>.jd_goodsbd {
+    width: 100%;
+}
+.jd_goods>.jd_goodsbd a{
+    width: 50%;
+}
+.jd_goods>.jd_goodsbd img {
+    width: 100%;
+    display: block;
+}
+.border_bottom{
+    border-bottom: 1px solid #ccc;
+}
+.border_left{
+    border-left: 1px solid #ccc;
+}
+.border_top{
+    border-top: 1px solid #ccc;
+}
+.border_right{
+    border-right: 1px solid #ccc;
+}
+.jd_sk {
+
+}
+.jd_sk>.jd_goodshd {
+    padding-left: 0;
+}
+.jd_sk>.jd_goodshd>.jd_sk_icon {
+    float: left;
+    width: 20px;
+    height: 22px;
+    margin-left: 10px;
+    background: url("../images/jd-sprites.png") -83px -109px;
+    background-size: 200px 200px;
+    margin-top: 3px;
+}
+.jd_sk>.jd_goodshd>.jd_sk_text {
+    float: left;
+    margin-left: 10px;
+    color: #e92322;
+}
+.jd_sk>.jd_goodshd>.jd_sk_time {
+    float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.jd_sk>.jd_goodshd>.jd_sk_time span {
+    float: left;
+    margin-left: 3px;
+    width: 13px;
+    height: 18px;
+    background-color: #000;
+    color: #fff;
+    line-height: 18px;
+    text-align: center;
+}
+.jd_sk>.jd_goodshd>.jd_sk_time span.cut {
+    color: #000;
+    margin-left: 0px;
+    background-color: #fff;
+}
+.jd_sk>.jd_goodshd>.jd_sk_time span.ml0 {
+    margin-left: 0;
+}
+.jd_sk>.jd_goodsbd a {
+    float: left;
+    padding-top: 20px;
+    width: 33.33%;
+    text-align: center;
+}
+.jd_sk>.jd_goodsbd img {
+    width: 70%;
+    display: inline-block;
+}

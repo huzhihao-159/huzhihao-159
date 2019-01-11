@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        div:nth-of-type(1){
+            background-color: red;
+        }
+        div:nth-of-type(2){
+            background-color: blue;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <script>
+        var startX,startY;  //手指触屏时的位置
+        var moveX,moveY;    //手指移动后的位置
+        var disX,disY;      //手指移动的距离
+        var currX,currY;    //触摸元素的位置
+        document.addEventListener("touchstart",function(e){
+            startX = e.targetTouches[0].clientX;
+            startY = e.targetTouches[0].clientY;
+            currX = e.target.offsetLeft;
+            currY = e.target.offsetTop;
+            
+        });
+        document.addEventListener("touchmove",function(e){
+            moveX = e.targetTouches[0].clientX;
+            moveY = e.targetTouches[0].clientY;
+
+            disX = moveX - startX;  //手指移动的距离
+            disY = moveY - startY;  //手指移动的距离
+            // 元素要到达的位置 = 元素当前位置 + 手指移动的距离
+            e.target.style.left = currX + disX + "px";
+            e.target.style.top = currY + disY + "px";
+        });
+    </script>
+</body>
+</html>

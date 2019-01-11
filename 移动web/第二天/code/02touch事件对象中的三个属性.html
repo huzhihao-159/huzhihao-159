@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 220px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        var div = document.querySelector("div");
+        div.addEventListener("touchmove", function (e) {
+            console.log(e.touches);
+            
+            // var touches = "在屏幕中的手指：" + e.touches.length;
+            // var targetTouches = "在元素上的手指：" + e.targetTouches.length;
+            // var changedTouches = "触屏状态发生改变的手指：" + e.changedTouches.length;
+
+            // this.innerHTML = touches + "<br /><br />" + targetTouches + "<br /><br />" + changedTouches;
+        });
+    </script>
+</body>
+
+</html>
