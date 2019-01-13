@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>hzh's blog | The site of the hzh2016</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <link rel="stylesheet" href="../hzh/style.css">
+    <script>window.lazyScripts = []</script>
+    <!-- custom head -->
+</head>
+
+<body cz-shortcut-listen="true">
+    <div id="loading" class="active"></div>
+
+    <aside id="menu">
+        <div class="inner flex-row-vertical">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+                <i class="icon icon-lg icon-close"></i>
+            </a>
+            <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+                <div class="brand">
+                    <a href="../hzh.html" class="avatar waves-effect waves-circle waves-light">
+                        <img src="../hzh/1.gif">
+                    </a>
+                    <hgroup class="introduce">
+                        <h5 class="nickname">胡之浩</h5>
+                    </hgroup>
+                </div>
+            </div>
+            <div class="scroll-wrap flex-col">
+                <ul class="nav">
+                    <li class="waves-block waves-effect ">
+                        <a href="../hzh.html">
+                            <i class="icon icon-lg icon-home"></i>
+                            主页
+                        </a>
+                    </li>
+
+                    <li class="waves-block waves-effect">
+                        <a href="../archives/archives.html">
+                            <i class="icon icon-lg icon-archives"></i>
+                            Archives
+                        </a>
+                    </li>
+
+                    <li class="waves-block waves-effect active">
+                        <a href="tags.html">
+                            <i class="icon icon-lg icon-tags"></i>
+                            Tags
+                        </a>
+                    </li>
+
+                    <li class="waves-block waves-effect">
+                        <a href="https://github.com/huzhihao-159" target="_blank">
+                            <i class="icon icon-lg icon-github"></i>
+                            Github
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <div class="mask" id="mask"></div>
+    <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+    <div class="global-share" id="globalShare">
+        <ul class="reset share-icons">
+            <li class=" waves-effect waves-block">
+                <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yangfan.site/&amp;title=Yangfan%27s%20blog&amp;pic=http://yangfan.site/uploads/me.jpg"
+                    data-title="微博">
+                    <i class="icon icon-weibo"></i>
+                </a>
+            </li>
+            <li class=" waves-effect waves-block">
+                <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+                    <i class="icon icon-weixin"></i>
+                </a>
+            </li>
+            <li class=" waves-effect waves-block">
+                <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yangfan.site/&amp;title=Yangfan%27s%20blog&amp;source=html%20css%20js%20%E5%89%8D%E7%AB%AF%20%E5%B0%8F%E7%A8%8B%E5%BA%8F"
+                    data-title=" QQ">
+                    <i class="icon icon-qq"></i>
+                </a>
+            </li>
+            <li class=" waves-effect waves-block">
+                <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yangfan.site/"
+                    data-title=" Facebook">
+                    <i class="icon icon-facebook"></i>
+                </a>
+            </li>
+            <li class=" waves-effect waves-block">
+                <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Yangfan%27s%20blog&amp;url=http://yangfan.site/&amp;via=http://yangfan.site"
+                    data-title=" Twitter">
+                    <i class="icon icon-twitter"></i>
+                </a>
+            </li>
+            <li class=" waves-effect waves-block">
+                <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yangfan.site/"
+                    data-title=" Google+">
+                    <i class="icon icon-google-plus"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="page-modal wx-share" id="wxShare">
+        <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+        <p>扫一扫，分享到微信</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=http://yangfan.site/" alt="微信分享二维码">
+    </div>
+
+
+
+
+    <script src="./hzh/waves.min.js.下载"></script>
+    <script>
+        var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+    </script>
+
+    <script src="./hzh/main.min.js.下载"></script>
+
+
+    <div class="search-panel" id="search-panel">
+        <ul class="search-result" id="search-result"></ul>
+    </div>
+    <template id="search-tpl"></template>
+
+    <script src="./hzh/search.min.js.下载" async=""></script>
+
+
+
+
+
+
+    <script async="" src="./hzh/busuanzi.pure.mini.js.下载"></script>
+
+
+
+    <script>
+        (function () {
+            var OriginTitile = document.title, titleTime;
+            document.addEventListener('visibilitychange', function () {
+                if (document.hidden) {
+                    document.title = '去哪里了！';
+                    clearTimeout(titleTime);
+                } else {
+                    document.title = '又好了！';
+                    titleTime = setTimeout(function () {
+                        document.title = OriginTitile;
+                    }, 2000);
+                }
+            });
+        })();
+    </script>
+
+
+
+
+
+</body>
+
+</html>

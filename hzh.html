@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>hzh's blog | The site of the hzh2019</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="hzh/style.css">
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <script>window.lazyScripts = []</script>
+    <!-- custom head -->
+</head>
+<body cz-shortcut-listen="true">
+    <div id="loading" class="active"></div>
+
+    <aside id="menu">
+        <div class="inner flex-row-vertical">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+                <i class="icon icon-lg icon-close"></i>
+            </a>
+            <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+                <div class="brand">
+                    <a href="www.eatchicken.ink" class="avatar waves-effect waves-circle waves-light">
+                        <img src="./hzh/1.gif">
+                    </a>
+                    <hgroup class="introduce">
+                        <h5 class="nickname">胡之浩</h5>
+                    </hgroup>
+                </div>
+            </div>
+            <div class="scroll-wrap flex-col">
+                <ul class="nav">
+                    <li class="waves-block waves-effect active">
+                        <a href="www.eatchicken.ink">
+                            <i class="icon icon-lg icon-home"></i>
+                            主页
+                        </a>
+                    </li>
+
+                    <li class="waves-block waves-effect">
+                        <a href="archives/archives.html">
+                            <i class="icon icon-lg icon-archives"></i>
+                            Archives
+                        </a>
+                    </li>
+
+                    <li class="waves-block waves-effect">
+                        <a href="tags/tags.html">
+                            <i class="icon icon-lg icon-tags"></i>
+                            Tags
+                        </a>
+                    </li>
+
+                    <li class="waves-block waves-effect">
+                        <a href="https://github.com/huzhihao-159" target="_blank">
+                            <i class="icon icon-lg icon-github"></i>
+                            Github
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+            <div class="flex-row">
+                <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+                    <i class="icon icon-lg icon-navicon"></i>
+                </a>
+                <div class="flex-col header-title ellipsis">hzh's blog</div>
+
+                <div class="search-wrap" id="search-wrap">
+                    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                        <i class="icon icon-lg icon-chevron-left"></i>
+                    </a>
+                    <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+                    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                        <i class="icon icon-lg icon-search"></i>
+                    </a>
+                </div>
+
+
+                <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+                    <i class="icon icon-lg icon-share-alt"></i>
+                </a>
+
+            </div>
+        </header>
+        <header class="content-header index-header">
+
+            <div class="container fade-scale in">
+                <h1 class="title">hzh's blog</h1>
+                <h5 class="subtitle">
+
+                    The site of the hzh2019
+
+                </h5>
+            </div>
+
+
+
+
+        </header>
+
+        <div class="container body-wrap">
+
+            <ul class="post-list">
+
+                <li class="post-list-item fade in">
+                    <article id="post-快速构建一个-vue-插件" class="article-card article-type-post" itemprop="blogPost">
+
+                        <div class="post-meta">
+                            <time class="post-time" title="2019-01-10 17:05:29" datetime="2019-01-10T09:05:29.000Z"
+                                itemprop="datePublished">2019-01-10</time>
+
+
+
+
+                        </div>
+
+
+
+
+
+                        <h3 class="post-title" itemprop="name">
+                            <a class="post-title-link" href="https://yangfan2016.github.io/2019/01/10/%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA-vue-%E6%8F%92%E4%BB%B6/">快速构建一个
+                                vue 插件</a>
+                        </h3>
+
+
+
+
+
+                        <div class="post-content" id="post-content" itemprop="postContent">
+
+
+                            碎碎念上一篇文章，我们介绍了如何构建一个 react 插件，今天我们说说如何构建 vue 插件
+                            准备工作由于与上一篇 react 插件文章使用的是相同的结构，代码测试、持续集成及发布 npm 包也都是一个套路，这里就不再敖述。下面主要说下不同的地方，let’s start 😊
+
+                            开发依赖包
+
+                            123456789101112131415161718{ "devDepende...
+
+
+                            <a href="https://yangfan2016.github.io/2019/01/10/%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA-vue-%E6%8F%92%E4%BB%B6/"
+                                class="post-more waves-effect waves-button">
+                                Continue reading...
+                            </a>
+                        </div>
+
+                    </article>
+
+                </li>
+
+            </ul>
+
+
+            <!-- <nav id="page-nav">
+                <div class="inner">
+                    <span class="page-number current waves-effect waves-button">1</span><a class="page-number waves-effect waves-button"
+                        href="https://yangfan2016.github.io/page/2/">2</a><a class="page-number waves-effect waves-button"
+                        href="https://yangfan2016.github.io/page/3/">3</a><a class="extend next waves-effect waves-button"
+                        rel="next" href="https://yangfan2016.github.io/page/2/">下一页</a>
+                </div>
+            </nav> -->
+
+
+        </div>
+
+        <footer class="footer">
+            <div class="top">
+
+                <p>
+                    <span id="busuanzi_container_site_uv" style="display:none">
+                        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+                    </span>
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                </p>
+
+
+                <p>
+
+                    <span><a href="https://yangfan2016.github.io/atom.xml" target="_blank" class="rss" title="rss"><i
+                                class="icon icon-lg icon-rss"></i></a></span>
+
+                    <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative
+                            Commons Attribution 4.0 International License</a>.</span>
+                </p>
+            </div>
+            <div class="bottom">
+                <p><span>hzh © 2018 - 2019</span>
+                    <span>
+
+                        Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo"
+                            target="_blank">indigo</a>
+                    </span>
+                </p>
+            </div>
+        </footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+    <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+    <div class="global-share" id="globalShare">
+        <ul class="reset share-icons">
+            <li class=" waves-effect waves-block">
+                <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yangfan.site/&amp;title=Yangfan%27s%20blog&amp;pic=http://yangfan.site/uploads/me.jpg"
+                    data-title="微博">
+                    <i class="icon icon-weibo"></i>
+                </a>
+            </li>
+            <li class=" waves-effect waves-block">
+                <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+                    <i class="icon icon-weixin"></i>
+                </a>
+            </li>
+            <li class=" waves-effect waves-block">
+                <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yangfan.site/&amp;title=Yangfan%27s%20blog&amp;source=html%20css%20js%20%E5%89%8D%E7%AB%AF%20%E5%B0%8F%E7%A8%8B%E5%BA%8F"
+                    data-title=" QQ">
+                    <i class="icon icon-qq"></i>
+                </a>
+            </li>
+            <li class=" waves-effect waves-block">
+                <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yangfan.site/"
+                    data-title=" Facebook">
+                    <i class="icon icon-facebook"></i>
+                </a>
+            </li>
+            <li class=" waves-effect waves-block">
+                <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Yangfan%27s%20blog&amp;url=http://yangfan.site/&amp;via=http://yangfan.site"
+                    data-title=" Twitter">
+                    <i class="icon icon-twitter"></i>
+                </a>
+            </li>
+            <li class=" waves-effect waves-block">
+                <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yangfan.site/"
+                    data-title=" Google+">
+                    <i class="icon icon-google-plus"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="page-modal wx-share" id="wxShare">
+        <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+        <p>扫一扫，分享到微信</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=http://yangfan.site/" alt="微信分享二维码">
+    </div>
+
+
+
+
+    <script src="./hzh/waves.min.js.下载"></script>
+    <script>
+        var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+    </script>
+    <script src="./hzh/main.min.js.下载"></script>
+
+
+    <div class="search-panel" id="search-panel">
+        <ul class="search-result" id="search-result"></ul>
+    </div>
+    <template id="search-tpl"></template>
+
+    <script src="./hzh/search.min.js.下载" async=""></script>
+
+
+
+    <script>
+        (function () {
+            var OriginTitile = document.title, titleTime;
+            document.addEventListener('visibilitychange', function () {
+                if (document.hidden) {
+                    document.title = '去哪里了！';
+                    clearTimeout(titleTime);
+                } else {
+                    document.title = '又好了！';
+                    titleTime = setTimeout(function () {
+                        document.title = OriginTitile;
+                    }, 2000);
+                }
+            });
+        })();
+    </script>
+
+
+
+
+
+</body>
+
+</html>
